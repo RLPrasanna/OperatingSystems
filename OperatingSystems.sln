@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadsForLoop", "OperatingSystems\ThreadsForLoop.csproj", "{738BB305-64AD-45EB-B714-4C72AEBA885F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadsForLoop", "ThreadsForLoop\ThreadsForLoop.csproj", "{738BB305-64AD-45EB-B714-4C72AEBA885F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSortUsingThreads", "MergeSort\MergeSortUsingThreads.csproj", "{D04F41CE-C02A-41EE-B7F1-DE1924FCEBE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProblemOfSynchronization", "ProblemOfSynchronization\ProblemOfSynchronization.csproj", "{83432286-0BDD-40C1-925D-C162B027F1FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D04F41CE-C02A-41EE-B7F1-DE1924FCEBE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D04F41CE-C02A-41EE-B7F1-DE1924FCEBE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D04F41CE-C02A-41EE-B7F1-DE1924FCEBE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83432286-0BDD-40C1-925D-C162B027F1FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83432286-0BDD-40C1-925D-C162B027F1FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83432286-0BDD-40C1-925D-C162B027F1FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83432286-0BDD-40C1-925D-C162B027F1FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
