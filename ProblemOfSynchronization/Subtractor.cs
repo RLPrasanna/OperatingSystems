@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProblemOfSynchronization
+namespace AdderSubtractorProblemOfSynchronization
 {
     internal class Subtractor
     {
@@ -19,6 +19,7 @@ namespace ProblemOfSynchronization
         {
             for (int i = 0; i < 1000; i++)
             {
+                // critical section
                 _count.Value-=i;
             }
         }
