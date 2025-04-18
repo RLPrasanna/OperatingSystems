@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdderSubtractorProblemOfSyn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdderSubtractorSync", "AdderSubtractorSync\AdderSubtractorSync.csproj", "{BCFC1C85-FDD7-46F9-9E08-672719310557}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdderSubtractorWithLockMethod", "AdderSubtractorWithLockMethod\AdderSubtractorWithLockMethod.csproj", "{759CA28C-D07F-4B57-B15D-2447DD43B479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerConsumerProblem", "ProducerConsumerProblem\ProducerConsumerProblem.csproj", "{B7B4152D-CE09-4267-8A4B-792803084B91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{BCFC1C85-FDD7-46F9-9E08-672719310557}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCFC1C85-FDD7-46F9-9E08-672719310557}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCFC1C85-FDD7-46F9-9E08-672719310557}.Release|Any CPU.Build.0 = Release|Any CPU
+		{759CA28C-D07F-4B57-B15D-2447DD43B479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{759CA28C-D07F-4B57-B15D-2447DD43B479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{759CA28C-D07F-4B57-B15D-2447DD43B479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{759CA28C-D07F-4B57-B15D-2447DD43B479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7B4152D-CE09-4267-8A4B-792803084B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B4152D-CE09-4267-8A4B-792803084B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B4152D-CE09-4267-8A4B-792803084B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B4152D-CE09-4267-8A4B-792803084B91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
