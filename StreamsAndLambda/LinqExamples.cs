@@ -11,7 +11,7 @@ namespace StreamsAndLambda
     {
         public static void Run()
         {
-            Console.WriteLine("=== LINQ Examples ===");
+            Console.WriteLine("\n=== LINQ Examples ===");
 
             List<int> numbers = new List<int> { 1, 9 , 5, 2, 3, 6, 10, 5 };
 
@@ -135,9 +135,9 @@ namespace StreamsAndLambda
             // LINQ with join
             List<Course> courses = new List<Course>
             {
-                new Course("Math", "A"),
-                new Course("Science", "B"),
-                new Course("History", "C")
+                new Course("A", "Math"),
+                new Course("B", "Science"),
+                new Course("C", "History")
             };
             var studentCourses = from s in students
                                  join c in courses on s.Batch equals c.Batch
@@ -156,7 +156,7 @@ namespace StreamsAndLambda
 
 
             // LINQ with zip
-            List<string> studentNamesList = new List<string> { "Alice", "Bob", "Charlie", "David" };
+            List<string> studentNamesList = new List<string> { "Alice1", "Bob1", "Charlie1", "David1" };
             var zipped = students.Zip(studentNamesList, (s, name) => new { s.Name, s.Age, StudentName = name });
             Console.WriteLine("Zipped student names and ages:");
             foreach (var z in zipped)
@@ -254,8 +254,7 @@ namespace StreamsAndLambda
 
             // LINQ with repeat
             var repeated = Enumerable.Repeat("Hello", 5).ToList();
-            Console.WriteLine(
-                "Repeated string 'Hello' 5 times: " + string.Join(", ", repeated));
+            Console.WriteLine("Repeated string 'Hello' 5 times: " + string.Join(", ", repeated));
 
 
             // LINQ with concat
@@ -301,19 +300,6 @@ namespace StreamsAndLambda
             foreach (var kvp in studentDictionary)
             {
                 Console.WriteLine($"{kvp.Key}: {kvp.Value}");
-            }
-
-
-            // LINQ with toHashSet
-            var studentHashSet = students.ToHashSet(s => s.Name);
-            Console.WriteLine("Students as HashSet: " + string.Join(", ", studentHashSet.Select(s => s.Name)));
-
-            // LINQ with toLookup
-            var studentLookup2 = students.ToLookup(s => s.Batch);
-            Console.WriteLine("Students grouped by batch (Lookup):");
-            foreach (var group in studentLookup2)
-            {
-                Console.WriteLine($"Batch {group.Key}: " + string.Join(", ", group.Select(s => s.Name)));
             }
 
 

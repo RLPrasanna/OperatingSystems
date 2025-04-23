@@ -92,5 +92,7 @@ class Program
         Console.WriteLine();
 
         PredicateExamples.Run();
+
+        LinqExamples.Run();
     }
 }

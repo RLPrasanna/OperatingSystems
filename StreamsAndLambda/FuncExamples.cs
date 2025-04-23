@@ -11,7 +11,7 @@ namespace StreamsAndLambda
     {
         public static void Run()
         {
-            Console.WriteLine("=== Func Examples ===");
+            Console.WriteLine("\n=== Func Examples ===");
 
             // Func with no input, returns a string
             Func<string> greet = () => "Hello, World!";
