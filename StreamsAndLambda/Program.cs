@@ -94,5 +94,7 @@ class Program
         PredicateExamples.Run();
 
         LinqExamples.Run();
+
+        DelegateExamples.Run();
     }
 }
