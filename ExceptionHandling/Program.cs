@@ -89,10 +89,10 @@ public class Program
         // {
         //     Console.WriteLine("Got IOException");
         // }
-        // catch (Exception)
-        // {
-        //     Console.WriteLine("Got General Exception");
-        // }
+        catch (Exception)
+        {
+            Console.WriteLine("Got General Exception");
+        }
         finally
         {
             Console.WriteLine("Inside Finally block");
