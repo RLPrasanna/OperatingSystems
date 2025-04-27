@@ -66,12 +66,12 @@ public class Program
             }
 
             // File operations
-            // FileInfo file = new FileInfo("fileName");
-            // using (StreamReader reader = file.OpenText())
-            // {
-            //     Console.WriteLine("Line after filereader");
-            //     Console.WriteLine(reader.ReadToEnd());
-            // }
+            FileInfo file = new FileInfo("fileName");
+            using (StreamReader reader = file.OpenText())
+            {
+                Console.WriteLine("Line after filereader");
+                Console.WriteLine(reader.ReadToEnd());
+            }
         }
         catch (DivideByZeroException)
         {
@@ -81,10 +81,10 @@ public class Program
         {
             Console.WriteLine("Something went wrong");
         }
-        // catch (FileNotFoundException)
-        // {
-        //     Console.WriteLine("Got FileNotFoundException");
-        // }
+        catch (FileNotFoundException)
+        {
+            Console.WriteLine("Got FileNotFoundException");
+        }
         // catch (IOException)
         // {
         //     Console.WriteLine("Got IOException");
